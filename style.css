@@ -1,0 +1,88 @@
+/* Attribution */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+/*--------------------*/
+/* Custom Properties  */
+/*--------------------*/
+:root{
+    /* typography */
+    --ff-primary: 'Outfit', Arial, sans-serif;
+    --fw-400: 400;
+    --fw-700: 700;
+
+    /* colors */
+    --clr-primary-dark: 218, 44%, 22%;
+    --clr-primary-light: 220, 15%, 55%;
+    --clr-secondary-light: 212, 45%, 89%;
+    --clr-secondary-white: 0, 0%, 100%;
+
+    /* border radius */
+    --br-lg: 1.25rem;
+    --br-sm: .75rem;
+}
+
+
+/*--------------------*/
+/* Reset              */
+/*--------------------*/
+body, h2, p{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+/*--------------------*/
+/* Components         */
+/*--------------------*/
+
+/*--- General --- */
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 1rem;
+    font-family: var(--ff-primary);
+    background-color: hsl(var(--clr-secondary-light));
+}
+
+/* --- Card --- */
+.card{
+    max-width: 320px;
+    padding: 1rem;
+    text-align: center;
+    background-color: hsl(var(--clr-secondary-white));
+    border-radius: var(--br-lg);
+    box-shadow: 10px 10px 15px hsl(220, 15%, 55%, .1);
+}
+
+.card__img{
+    border-radius: var(--br-sm);
+}
+
+.card__content-container{
+    padding: 1.4375rem 1rem;
+}
+
+.card__title{
+    font-size: 1.375rem;
+    font-weight: var(--fw-700);
+    color: hsl(var(--clr-primary-dark));
+}
+
+.card__desc{
+    margin-top: 1rem;
+    font-size: 0.9375rem;
+    color: hsl(var(--clr-primary-light));
+}
